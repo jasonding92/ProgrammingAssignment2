@@ -1,7 +1,7 @@
-## Put comments here that give an overall description of what your
-## functions do
+## The following two functions compute the inverse of a matrix more efficiently.
 
-## Write a short comment describing this function
+
+## This function creates a speical type of the input matrix.
 
 makeCacheMatrix <- function(x = as.matrix()) {
   m <- NULL
@@ -17,7 +17,8 @@ makeCacheMatrix <- function(x = as.matrix()) {
        getinverse = getinverse)
 }
 
-## Write a short comment describing this function
+## This functions compute the inverse of the input matrix.
+## If this matrix has been computed before, it can get the cached calculated result.
 
 cachesolve <- function(x, ...) {
   m <- x$getinverse()
